@@ -34,6 +34,5 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export FIGNORE=DS_Store
 
 #----------TEMPORARY DIRECTORY SHORTCUTS----------
-alias myfork='cd /Users/Dean/phenotips-allfiles/myFork/phenotips'
-alias textanalysis='cd /Users/Dean/phenotips-allfiles/clinical-text-analysis-extension'
+source ~/.shortcuts
 
