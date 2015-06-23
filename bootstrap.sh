@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# Credit to https://github.com/mathiasbynens/dotfiles/blob/master/bootstrap.sh
+#
+
 cd "$(dirname "${BASH_SOURCE}")"
 
 function doIt() {
