@@ -1,2 +1,16 @@
 alias myfork='cd /Users/Dean/phenotips-allfiles/myFork/phenotips'
 alias textanalysis='cd /Users/Dean/phenotips-allfiles/clinical-text-analysis-extension'
+
+runPhenotips(){
+    cd /Users/Dean/phenotips-allfiles/myFork/phenotips/distribution/standalone/target/
+    if [[ -d phenotips-standalone-1.2-SNAPSHOT ]]
+    then
+        ./phenotips-standalone-1.2-SNAPSHOT/start.sh 
+    elif [[ -e phenotips-standalone-1.2-SNAPSHOT.zip ]]
+    then
+        unzip phenotips-standalone-1.2-SNAPSHOT.zip  
+        ./phenotips-standalone-1.2-SNAPSHOT/start.sh
+    else
+        echo "phenotips-standalone-1.2-SNAPSHOT.zip Does not exist in this project."
+    fi 
+}
