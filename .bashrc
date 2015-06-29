@@ -1,7 +1,7 @@
 #----------Profile settings----------
 
 #PS1="\W >"
-source .bash_prompt
+source ~/.bash_prompt
 
 #----------PATH Changes----------
 export PATH="$PATH:$HOME/bin"
