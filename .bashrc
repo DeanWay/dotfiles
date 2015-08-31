@@ -3,7 +3,7 @@
 #PS1="\W >"
 source ~/.bash_prompt
 
-#----------PATH Changes----------
+#----------ENVIROMENT VARIABLE Changes----------
 export PATH="$PATH:$HOME/bin"
 
 export PATH=/opt/maven/bin:${PATH}
@@ -17,6 +17,10 @@ export PATH=/opt/maven/bin:${PATH}
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
+
+#pyenv / flask
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+export PYENV_ROOT=/usr/local/opt/pyenv
 
 #----------COMMAND OPTIONS/ALIASES----------
 alias branch='git branch'
