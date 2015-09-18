@@ -11,6 +11,8 @@ export PATH=/opt/maven/bin:${PATH}
 #Because I work on Mac. Delete this line if you don't
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+
 #----------COMMAND DEPENDANCIES----------
 #autojump dependancy
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
