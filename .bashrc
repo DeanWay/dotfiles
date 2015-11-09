@@ -8,6 +8,8 @@ export PATH="$PATH:$HOME/bin"
 
 export PATH=/opt/maven/bin:${PATH}
 
+export PATH=/usr/local/mysql/bin:$PATH
+
 #Because I work on Mac. Delete this line if you don't
 export JAVA_HOME=$(/usr/libexec/java_home)
 
