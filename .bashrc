@@ -15,6 +15,10 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
+export PHENOTIPS_HOME=/Users/dean/School/3760/phenotips 
+
+export CLASSPATH=${CLASSPATH}:/Library/Java/Extensions/cup.jar
+
 #----------COMMAND DEPENDANCIES----------
 #autojump dependancy
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
