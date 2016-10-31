@@ -53,7 +53,6 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export FIGNORE=DS_Store
 
 #----------TEMPORARY DIRECTORY SHORTCUTS----------
-source ~/.shortcuts
 
 
 #----------CUSTOM FUNCTIONS----------
