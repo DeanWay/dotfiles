@@ -11,7 +11,7 @@ export PATH=/opt/maven/bin:${PATH}
 export PATH=/usr/local/mysql/bin:$PATH
 
 #Because I work on Mac. Delete this line if you don't
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home -F 2> /dev/null)
 
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
