@@ -103,7 +103,6 @@ fi;
 PS1="\[${red}\]---\[${orange}\]---\[${yellow}\]---\[${green}\]---\[${blue}\]---\[${violet}\]---";
 PS1+="\[${red}\]---\[${orange}\]---\[${yellow}\]---\[${green}\]---\[${blue}\]---\[${violet}\]---";
 PS1+="\[${red}\]---\[${orange}\]---\[${yellow}\]---\[${green}\]---\[${blue}\]---\[${violet}\]---";
-PS1+="\[${red}\]---\[${orange}\]---\[${yellow}\]---\[${green}\]---\[${blue}\]---\[${violet}\]---";
 PS1+="\n"; # newline before prompt
 PS1+="\[${userStyle}\]\u";
 PS1+="\[${white}\] in ";
