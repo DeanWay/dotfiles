@@ -38,6 +38,9 @@ fi
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 export PYENV_ROOT=/usr/local/opt/pyenv
 
+#nvm
+. "/usr/local/opt/nvm/nvm.sh"
+
 #----------COMMAND OPTIONS/ALIASES----------
 alias branch='git branch'
 
