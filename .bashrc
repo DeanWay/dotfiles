@@ -24,9 +24,11 @@ export CLASSPATH=${CLASSPATH}:/Library/Java/Extensions/cup.jar
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 #git completion dependancy
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+  . `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
+
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
