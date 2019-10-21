@@ -1,28 +1,12 @@
 #----------Profile settings----------
-
-#PS1="\W >"
 source ~/.bash_prompt
 
 #----------ENVIROMENT VARIABLE Changes----------
 export PATH="$PATH:$HOME/bin"
 
-export PATH=/opt/maven/bin:${PATH}
-
 export PATH=/usr/local/mysql/bin:$PATH
 
-#Because I work on Mac. Delete this line if you don't
-export JAVA_HOME=$(/usr/libexec/java_home -F 2> /dev/null)
-
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
-
-export PHENOTIPS_HOME=/Users/dean/School/3760/phenotips 
-
-export CLASSPATH=${CLASSPATH}:/Library/Java/Extensions/cup.jar
-
 #----------COMMAND DEPENDANCIES----------
-#autojump dependancy
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
 #git completion dependancy
 if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
   . `brew --prefix`/etc/bash_completion.d/git-completion.bash
@@ -34,27 +18,9 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-#pyenv / flask
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-export PYENV_ROOT=/usr/local/opt/pyenv
-
-#nvm
-. "/usr/local/opt/nvm/nvm.sh"
-
 #----------COMMAND OPTIONS/ALIASES----------
-alias branch='git branch'
-
-git(){
-    if [[ $@ == 'log' ]]; then
-        command git log | less
-    else
-        command git "$@"
-    fi
-}
-
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-
 export FIGNORE=DS_Store
 
 #----------TEMPORARY DIRECTORY SHORTCUTS----------
