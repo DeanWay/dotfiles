@@ -4,7 +4,7 @@ source ~/.bash_prompt
 #----------ENVIROMENT VARIABLE Changes----------
 export PATH="$PATH:$HOME/bin"
 
-export PATH=/usr/local/mysql/bin:$PATH
+export PATH=/usr/local/bin:$PATH
 
 #----------COMMAND DEPENDANCIES----------
 #git completion dependancy
