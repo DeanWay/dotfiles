@@ -8,6 +8,7 @@ export PATH=/usr/local/mysql/bin:$PATH
 
 #----------COMMAND DEPENDANCIES----------
 #git completion dependancy
+eval "$(/opt/homebrew/bin/brew shellenv)"
 if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
   . `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
@@ -26,11 +27,3 @@ export FIGNORE=DS_Store
 #----------TEMPORARY DIRECTORY SHORTCUTS----------
 
 
-#----------CUSTOM FUNCTIONS----------
-function tabname {
-  printf "\e]1;$1\a"
-}
-
-function winname {
-  printf "\e]2;$1\a"
-}
