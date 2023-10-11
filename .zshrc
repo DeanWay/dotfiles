@@ -1,5 +1,5 @@
-#----------BASH PROMPT----------
-source ~/.bash_prompt
+#----------PROMPT----------
+source ~/.zsh_prompt
 
 #----------SHELL OPTIONS----------
 export CLICOLOR=1
@@ -10,4 +10,5 @@ export FIGNORE=DS_Store
 #----------ENVIROMENT VARIABLE CHANGES----------
 export PATH="$PATH:$HOME/bin"
 export PATH=/usr/local/bin:$PATH
+
 
